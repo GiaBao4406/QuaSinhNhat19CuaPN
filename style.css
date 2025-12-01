@@ -1,0 +1,141 @@
+/* Thiết lập chung */
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #121212;
+  color: #f0f0f0;
+  overflow-x: hidden;
+  position: relative;
+}
+
+/* Canvas overlay */
+#fireworksCanvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+
+/* Container chứa nội dung chính */
+.container {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 15px;
+  box-shadow: 0 0 30px rgba(255, 215, 0, 0.4);
+  max-width: 95%;
+  transition: opacity 0.5s ease-out;
+}
+
+/* Hiệu ứng Text Typing */
+#typing-text {
+  font-size: 2em;
+  color: #ffd700;
+  border-right: 2px solid #ffd700;
+  white-space: nowrap;
+  overflow: hidden;
+  margin: 15px 0;
+  font-weight: bold;
+  animation: blink-caret 0.75s step-end infinite;
+}
+
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: #ffd700;
+  }
+}
+
+/* Nút CTA - Hiệu ứng phát sáng */
+.cta-button {
+  display: inline-block;
+  padding: 12px 25px;
+  margin-top: 20px;
+  background-color: #e91e63;
+  color: white;
+  text-decoration: none;
+  border-radius: 50px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 15px #e91e63;
+}
+
+.cta-button:hover {
+  background-color: #c2185b;
+  transform: scale(1.05);
+  box-shadow: 0 0 25px #e91e63;
+}
+
+/* --- Nội Dung Quà Tặng (gift-reveal) --- */
+.hidden {
+  display: none;
+}
+
+.gift-reveal {
+  position: absolute;
+  z-index: 5;
+  text-align: center;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.7);
+  border-radius: 20px;
+  box-shadow: 0 0 40px rgba(255, 100, 200, 0.8),
+    0 0 10px rgba(255, 255, 255, 0.5);
+  max-width: 90%;
+  opacity: 0;
+  transition: opacity 1s ease-in;
+}
+
+.wow-text {
+  font-size: 2em;
+  color: #ffc0cb;
+  text-shadow: 0 0 10px #ffc0cb;
+}
+
+/* BỐ CỤC 1 VIDEO ĐƠN - KÍCH THƯỚC ĐÃ CHỈNH NHỎ */
+.video-wrapper.single-video {
+  margin: 20px auto;
+  max-width: 450px; /* Đặt lại kích thước hợp lý cho laptop */
+  width: 100%;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(255, 100, 200, 0.8);
+}
+
+.gift-video {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 10px;
+  transition: opacity 0.5s ease-in-out;
+}
+
+/* Tăng font size lại cho Laptop/Desktop */
+@media (min-width: 768px) {
+  #typing-text {
+    font-size: 3em;
+  }
+  .wow-text {
+    font-size: 2.5em;
+  }
+  .container,
+  .gift-reveal {
+    padding: 40px;
+  }
+  /* Đảm bảo kích thước video nhỏ hơn trên Mobile */
+  .video-wrapper.single-video {
+    max-width: 350px; /* Thêm một lần điều chỉnh cho màn hình lớn hơn một chút nếu cần */
+  }
+}

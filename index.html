@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quà sinh nhật của PN</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <canvas id="fireworksCanvas"></canvas>
+
+    <div class="container">
+      <h1 id="typing-text"></h1>
+
+      <p class="message" style="display: none">
+        Sinh nhật vui vẻ nhaaa ! Chúc Phương Nhung sinh nhật vui vẻ, không muộn
+        phiền túi nhiều tiền!!!!.
+      </p>
+
+      <a href="#" class="cta-button" style="display: none">Bấm để nhận Quà!</a>
+    </div>
+
+    <audio id="birthdaySong" src="media/hpbd.mp3"></audio>
+
+    <div id="giftRevealContent" class="gift-reveal hidden">
+      <h2 class="wow-text">Chúc Mừng Sinh Nhật Phương Nhung!</h2>
+
+      <div class="video-wrapper single-video">
+        <video
+          id="giftVideo"
+          class="gift-video"
+          width="100%"
+          controls
+          src="media/video.mp4"
+          title="Video Kỷ Niệm"
+        >
+          Trình duyệt của bạn không hỗ trợ thẻ video.
+        </video>
+      </div>
+
+      <p>
+        Chúc Phương Nhung sinh nhật vui vẻ, không muộn phiền túi nhiều tiền!
+      </p>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
