@@ -18,7 +18,7 @@ let fireworksInterval;
 const videoSources = [
   "media/video.mp4",
   "media/video2.mp4",
-  "media/video3.mp4", // VIDEO THỨ 3
+  "media/video3.mp4",
 ];
 let currentVideoIndex = 0;
 

@@ -39,7 +39,7 @@ body {
 
 /* Hiệu ứng Text Typing */
 #typing-text {
-  font-size: 2em;
+  font-size: 1.5em;
   color: #ffd700;
   border-right: 2px solid #ffd700;
   white-space: nowrap;
@@ -107,7 +107,7 @@ body {
 /* BỐ CỤC 1 VIDEO ĐƠN - KÍCH THƯỚC ĐÃ CHỈNH NHỎ */
 .video-wrapper.single-video {
   margin: 20px auto;
-  max-width: 450px; /* Đặt lại kích thước hợp lý cho laptop */
+  max-width: 300px; /* Đặt lại kích thước hợp lý cho laptop */
   width: 100%;
   overflow: hidden;
   border-radius: 10px;
