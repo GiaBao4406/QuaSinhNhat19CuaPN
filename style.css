@@ -136,6 +136,6 @@ body {
   }
   /* Đảm bảo kích thước video nhỏ hơn trên Mobile */
   .video-wrapper.single-video {
-    max-width: 250px; /* Thêm một lần điều chỉnh cho màn hình lớn hơn một chút nếu cần */
+    max-width: 350px; /* Thêm một lần điều chỉnh cho màn hình lớn hơn một chút nếu cần */
   }
 }
