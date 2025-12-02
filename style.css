@@ -39,7 +39,7 @@ body {
 
 /* Hiệu ứng Text Typing */
 #typing-text {
-  font-size: 2em;
+  font-size: 1.5em;
   color: #ffd700;
   border-right: 2px solid #ffd700;
   white-space: nowrap;
@@ -136,6 +136,6 @@ body {
   }
   /* Đảm bảo kích thước video nhỏ hơn trên Mobile */
   .video-wrapper.single-video {
-    max-width: 150px; /* Thêm một lần điều chỉnh cho màn hình lớn hơn một chút nếu cần */
+    max-width: 250px; /* Thêm một lần điều chỉnh cho màn hình lớn hơn một chút nếu cần */
   }
 }
